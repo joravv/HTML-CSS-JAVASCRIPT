@@ -1,0 +1,35 @@
+h2{
+    color: blue;
+    fpnt-size: 40px;
+}
+
+p{
+    margin-top: 50px;
+    margin-bottom:40px ;
+    margin-left:60px ;
+    margin-right: 70px;
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom:40px ;
+    margin-left:60px ;
+    margin-right: 70px;    
+}
+
+div{
+    width: 150px;
+    height: 130px;
+    margin: 50;
+    border: 465;
+    padding:35 ;
+    border-radius:57 ;
+}
+
+p{
+    color: coral;
+}
+
+body{
+    background-color: blue;
+}

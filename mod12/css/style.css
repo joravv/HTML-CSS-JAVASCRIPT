@@ -1,0 +1,47 @@
+@chewy_bubbel_zip{
+    font-family:"test"
+    src:url(font/chewy_bubbel_zip)
+
+}
+
+
+
+h1{
+    color: grey;
+    letter-spacing: 0cm;
+    word-spacing: 0cqb;
+}
+p{
+    text-align: center;
+    text-indent: 5mm;
+    color: black;
+    font-style: inherit;
+    font-size: 20px;
+    font-family: test;
+}
+h2{
+    text-decoration: overline;
+    color: blue;
+}
+
+h3{
+    text-decoration: line-through;
+    color: red;
+}
+h4{
+    text-decoration: underline;
+    color: blue;
+}
+
+.test1{
+    color: pink;
+    font-size: small;
+    text-align: center;
+    font-style: italic;
+}
+
+#pop{
+    color: grey;
+    font-size: 50px;
+    text-align: center;
+}
