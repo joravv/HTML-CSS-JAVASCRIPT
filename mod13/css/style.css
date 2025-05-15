@@ -1,0 +1,59 @@
+ul {
+
+	/* list-style: circle; */
+	/* list-style: square; */
+
+	list-style-type: none;
+	padding: 0;
+	border: 2px solid grey;
+	
+}
+
+ul li {
+	padding: 8px 16px;
+	border-left: 3px solid green;
+}
+
+
+
+
+
+
+ol {
+
+	 /* list-style: upper-roman; */
+	 background-color: aquamarine;
+	 padding: 15px;
+}
+
+ol li {
+	background-color: bisque;
+	padding: 10px;
+	margin-left: 30px;
+}
+
+
+/* table {
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 1px solid blue;
+	padding: 15px;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: blueviolet;
+}
+tbody tr:nth-child(even) {
+	background-color: rgb(146, 124, 166);
+} */
+
+div {
+	/* overflow: visible; */
+	/* overflow: hidden; */
+	overflow: scroll;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(227, 136, 162);
+}

@@ -1,0 +1,42 @@
+article p{
+    background: blue;
+    color: blueviolet;
+    padding: 20px;
+}
+article > p{
+  background-color: lightpink;   
+  padding: 20px;                                                     
+}
+article + p{
+    background-color: hotpink;
+    padding: 20PX;
+}
+
+article -{
+    background-color:pink
+    padding: 20px;
+}
+
+h3 first-of-type{
+    color: red;
+
+}
+
+input:in-range{
+color:pink;
+}
+
+input:required{
+    background-color: aquamarine;
+}
+input:focus{
+    background-color: blueviolet;
+}
+
+p::first-line{
+    color: darkorchid;
+}
+
+p::first-letter{
+    color:chartreuse
+}
