@@ -1,0 +1,38 @@
+div.gallery{
+    margin: 5px;
+    border: 1px solid pink;
+    width: 180px;
+}
+
+
+div.galllery:hover{
+    border:3px solid beige;
+
+}
+
+div.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+div.desc{
+    padding: 15px;
+    text-align: center;
+}
+
+.sprite{
+    background: url("../images/houses.png");
+}
+.hipsters{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    background-position: 0 0;
+
+}
+
+p[class*="ds"]{
+    background-color: antiquewhite;
+    color: aqua;
+    padding: 20px;
+}
