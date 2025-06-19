@@ -1,0 +1,465 @@
+/* CSS Reset + Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #b03a5b;
+}
+
+/* Header / Navbar */
+.main-header {
+  background: linear-gradient(to right, #ffc0cb, #fff0f5);
+  padding-bottom: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.cart-icon {
+  font-size: 1.4rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #b03a5b;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d45a78;
+}
+
+/* Featured Products */
+.featured-products {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  background-color: #b03a5b;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.btn:hover {
+  background-color: #d45a78;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+/* Newsletter */
+.newsletter {
+  background-color: #ffe4e1;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.newsletter form {
+  margin-top: 1rem;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  width: 250px;
+  margin-right: 0.5rem;
+}
+
+.newsletter button {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #b03a5b;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #d45a78;
+}
+
+/* Footer */
+.footer {
+  background-color: #fff0f5;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.footer .social-links {
+  margin-top: 1rem;
+}
+
+.footer .social-links a {
+  margin: 0 0.5rem;
+  color: #b03a5b;
+  font-weight: 500;
+}
+
+.footer .social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .newsletter input[type="email"] {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Perfume Section */
+.perfume-section {
+  background: black;
+  color: #f84c66; /* bright red-pink for text */
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Sparkle background using animated dots */
+.perfume-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background:
+    radial-gradient(circle 1.5px at 10% 20%, rgba(255,255,255,0.8) 99%, transparent 100%),
+    radial-gradient(circle 1.5px at 50% 50%, rgba(255,255,255,0.6) 99%, transparent 100%),
+    radial-gradient(circle 1.5px at 80% 80%, rgba(255,255,255,0.7) 99%, transparent 100%);
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  animation: sparkleMove 15s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+/* Red kiss marks pattern overlay (simplified) */
+.perfume-section::after {
+  content: "💋 💋 💋 💋 💋 💋 💋 💋";
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  color: #f84c66;
+  opacity: 0.15;
+  white-space: nowrap;
+  animation: kissMove 20s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Sparkle animation */
+@keyframes sparkleMove {
+  0% { background-position: 0 0, 50px 50px, 100px 100px; }
+  100% { background-position: 100px 100px, 150px 150px, 200px 200px; }
+}
+
+/* Kiss marks scrolling */
+@keyframes kissMove {
+  0% { transform: translateX(-50%) translateX(0); }
+  100% { transform: translateX(-50%) translateX(-100%); }
+}
+
+/* Section Title */
+.perfume-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Perfume Gallery - horizontal scroll with snap */
+.perfume-gallery {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.perfume-gallery::-webkit-scrollbar {
+  height: 10px;
+}
+
+.perfume-gallery::-webkit-scrollbar-thumb {
+  background-color: #f84c66;
+  border-radius: 20px;
+}
+
+/* Perfume Cards */
+.perfume-card {
+  min-width: 280px;
+  background: #1c1c1c;
+  border-radius: 15px;
+  padding: 1rem;
+  scroll-snap-align: center;
+  box-shadow: 0 0 10px #f84c66;
+  color: #f84c66;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfume-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #ff425a;
+}
+
+.perfume-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  filter: brightness(90%);
+  transition: filter 0.3s ease;
+}
+
+.perfume-card img:hover {
+  filter: brightness(110%);
+}
+
+.perfume-card h3 {
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #ff425a;
+}
+
+.perfume-card p {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #f06a79;
+}
+
+.btn.perfume-btn {
+  background-color: #ff425a;
+  color: white;
+  border-radius: 25px;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn.perfume-btn:hover {
+  background-color: #f84c66;
+}
+
+/* Responsive: vertical stacking on small screens */
+@media (max-width: 600px) {
+  .perfume-gallery {
+    flex-direction: column;
+    overflow-x: visible;
+  }
+
+  .perfume-card {
+    min-width: 100%;
+  }
+}
+
+/* Skincare Page Specific Styling */
+body {
+  background: #ffe6f0; /* soft pink */
+  font-family: 'Playfair Display', serif;
+  color: #d6336c; /* rich pink text */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Main title style */
+.category-main h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem 0;
+  text-shadow: 2px 2px 6px #ffb6c1;
+}
+
+/* Product grid adjustments */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto 4rem auto;
+  padding: 0 1rem;
+}
+
+/* Product cards with pink shadows and elegant border */
+.product-card {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow:
+    0 0 15px rgba(214, 51, 108, 0.4),
+    0 0 30px rgba(255, 182, 193, 0.5);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect: scale up + brighter pink glow */
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 25px #d6336c,
+    0 0 40px #ff69b4;
+  z-index: 10;
+}
+
+/* Product images with rounded corners */
+.product-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 15px rgba(214, 51, 108, 0.3);
+  transition: transform 0.3s ease;
+}
+
+/* Slight zoom on image hover */
+.product-card img:hover {
+  transform: scale(1.1);
+}
+
+/* Product titles */
+.product-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #b00048;
+  font-weight: 700;
+}
+
+/* Product price */
+.product-card p {
+  font-weight: 600;
+  color: #d6336c;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Add to Bag button with pink gradient */
+.btn {
+  background: linear-gradient(45deg, #ff4b91, #d6336c);
+  border: none;
+  color: white;
+  padding: 0.7rem 1.3rem;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px #ff69b4;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+

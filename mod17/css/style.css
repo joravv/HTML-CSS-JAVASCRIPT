@@ -2,6 +2,16 @@
     position: relative;
     display: inline-block;
 }
+body{
+    counter-reset: number;
+    background-color: dimgray;
+}
+
+:root{
+    primary-color:red;
+    blue:blue;
+    b:black;
+}
 
 .dropdown-content{
     display: none;
@@ -14,4 +24,26 @@
 
 .dropdown:hover  .dropdown-content{
     display: block;
+}
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid black;
+}
+.tooltip .tooltiptext{
+    visibality:hidden;
+    width:120px;
+    background-color: pink;
+    text-aling:center;
+    border-radius:6px;
+    padding: 50px 0px;
+    position:absolute;
+    z-index:1;
+    
+
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
 }
