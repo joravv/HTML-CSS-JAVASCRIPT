@@ -16,8 +16,8 @@
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#shop">Shop</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       
 </nav>
@@ -28,7 +28,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Skincare - PrettyGlam</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -45,29 +45,84 @@
       <a href="#shop" class="cta-button">Shop Now</a>
     </div>
   </header>
+  <!-- Cart Overlay -->
+<div id="cart-overlay" class="cart-overlay">
+  <div class="cart-content">
+    <span id="close-cart" class="close-cart">✖</span>
+    <h2>Your Bag 🛍️</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button id="checkout-btn" class="btn">Checkout</button>
+  </div>
+</div>
+
+
 
   <section id="shop" class="featured-products">
     <h2>Best Sellers</h2>
     <div class="product-grid">
       <div class="product-card">
-        <img src="images/2.jpg" alt="Rose Lipstick">
+        <img src="C:\Users\Admin\Desktop\Projekti final joraa\2.jpg" alt="Rose Lipstick">
         <h3>Rose Lipstick</h3>
         <p>$18.99</p>
-        <button class="btn">Add to Bag</button>
+         <button class="btn add-to-cart" data-name="Rose Lipstick" data-price="18.99">Add to Bag</button>
       </div>
       <div class="product-card">
-        <img src="images/1.jpg" alt="Shimmer Highlighter">
+        <img src="C:\Users\Admin\Desktop\Projekti final joraa\1.jpg" alt="Shimmer Highlighter">
         <h3>Shimmer Highlighter</h3>
         <p>$24.99</p>
-        <button class="btn">Add to Bag</button>
+        <button class="btn add-to-cart" data-name="Shimmer Highlighter" data-price="24.99">Add to Bag</button>
       </div>
       <div class="product-card">
-        <img src="images/3.jpg" alt="Eyeshadow Palette">
+        <img src="C:\Users\Admin\Desktop\Projekti final joraa\3.jpg" alt="Eyeshadow Palette">
         <h3>Eyeshadow Palette</h3>
         <p>$34.99</p>
-        <button class="btn">Add to Bag</button>
+        <button class="btn add-to-cart" data-name="Eyeshadow Palette" data-price="34.99">Add to Bag</button>
       </div>
-    </div>
+   
+    <div class="product-card">
+        <img src="C:\Users\Admin\Desktop\Projekti final joraa\12.jpg" alt="Rare Beauty Blush">
+        <h3>Rare Beauty Blush</h3>
+        <p>$29.99</p>
+        <button class="btn add-to-cart" data-name="Rare Beauty Blush" data-price="29.99">Add to Bag</button>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\Admin\Desktop\Projekti final joraa\13.jpg" alt="Gisoue Hair Oil">
+        <h3>Gisoue Hair Oi</h3>
+        <p>$43.70</p>
+        <button class="btn add-to-cart" data-name="Gisoue Hair Oil" data-price="43.70">Add to Bag</button>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\Admin\Desktop\Projekti final joraa\14.jpg" alt="Gisoue Hair Cream">
+        <h3>Gisoue Hair Cream</h3>
+        <p>$29.00</p>
+        <button class="btn add-to-cart" data-name="Gisoue Hair Cream" data-price="29.00">Add to Bag</button>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\Admin\Desktop\Projekti final joraa\15.jpg" alt="Gisoue Lavender Hair Perfume">
+        <h3>Gisoue Lavender Hair Perfume</h3>
+        <p>$38.00</p>
+        <button class="btn add-to-cart" data-name="Gisoue Lavender Hair Perfume" data-price="38.00">Add to Bag</button>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\Admin\Desktop\Projekti final joraa\16.jpg" alt="Sol De Janiero 40">
+        <h3>Sol De Janiero 40</h3>
+        <p>$39.00</p>
+        <button class="btn add-to-cart" data-name="Sol De Janiero 40" data-price="39.00">Add to Bag</button>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\Admin\Desktop\Projekti final joraa\17.jpg" alt="Summer Friday Pink sugar">
+        <h3>Summer Friday Pink sugar</h3>
+        <p>$26.00</p>
+        <button class="btn add-to-cart" data-name="Summer Fridays Pink Sugar" data-price="26.00">Add to Bag</button>
+      </div>
+      <div class="product-card">
+        <img src="C:\Users\Admin\Desktop\Projekti final joraa\18.jpg" alt="Lanige Lip Mask Vanilla">
+        <h3>Lanige Lip Mask Vanilla</h3>
+        <p>$30.00</p>
+        <button class="btn add-to-cart" data-name="Lanige Lip Mask Vanilla" data-price="30.00">Add to Bag</button>
+      </div>
+       </div>
   </section>
 
 
@@ -94,32 +149,96 @@
   <h2>Fragrances to Fall For</h2>
   <div class="perfume-gallery">
     <div class="perfume-card">
-      <img src="images/6.jpg" alt="Rose Blossom Perfume" />
-      <h3>Rose Blossom Perfume</h3>
-      <p>$45.00</p>
-      <button class="btn perfume-btn">Add to Bag</button>
+      <img src="C:\Users\Admin\Desktop\Projekti final joraa\6.jpg" alt="Valentino" />
+      <h3>Valentino</h3>
+      <p>$185.00</p>
+      <button class="btn add-to-cart" data-name="Valentino" data-price="185.00">Add to Bag</button>
     </div>
     <div class="perfume-card">
-      <img src="images/4.jpg" alt="Vanilla Dream" />
-      <h3>Vanilla Dream</h3>
-      <p>$50.00</p>
-      <button class="btn perfume-btn">Add to Bag</button>
+      <img src="C:\Users\Admin\Desktop\Projekti final joraa\4.jpg" alt="YSL Perfume" />
+      <h3>YSL Perfume</h3>
+      <p>$180.00</p>
+      <button class="btn add-to-cart" data-name="YSL Perfume" data-price="180.00">Add to Bag</button>
     </div>
     <div class="perfume-card">
-      <img src="images/5.jpg" alt="Jasmine Breeze" />
-      <h3>Jasmine Breeze</h3>
-      <p>$55.00</p>
-      <button class="btn perfume-btn">Add to Bag</button>
+      <img src="C:\Users\Admin\Desktop\Projekti final joraa\5.jpg" alt="Good Girl" />
+      <h3>Good Girl</h3>
+      <p>$123.50</p>
+      <button class="btn add-to-cart" data-name="Good Girl" data-price="123.50">Add to Bag</button>
     </div>
     <div class="perfume-card">
-      <img src="images/7.jpg" alt="Midnight Rose" />
-      <h3>Midnight Rose</h3>
-      <p>$60.00</p>
-      <button class="btn perfume-btn">Add to Bag</button>
+      <img src="C:\Users\Admin\Desktop\Projekti final joraa\7.jpg" alt="Miss Dior" />
+      <h3>Miss dior</h3>
+      <p>$160.00</p>
+      <button class="btn add-to-cart" data-name="Miss Dior" data-price="160.00">Add to Bag</button>
+    </div>
+    <div class="perfume-card">
+      <img src="C:\Users\Admin\Desktop\Projekti final joraa\19.jpg" alt="Prada Paradoxe" />
+      <h3>Prada Paradoxe</h3>
+      <p>$180.00</p>
+      <button class="btn add-to-cart" data-name="Prada Paradoxe" data-price="180.00">Add to Bag</button>
     </div>
   </div>
 </section>
+<script>
+const cartOverlay = document.getElementById("cart-overlay");
+const cartIcon = document.querySelector(".cart-icon");
+const closeCart = document.getElementById("close-cart");
+
+const cartItems = document.getElementById("cart-items");
+const cartTotal = document.getElementById("cart-total");
+
+let cart = [];
+
+// Open/close cart overlay
+cartIcon.addEventListener("click", () => cartOverlay.classList.add("open"));
+closeCart.addEventListener("click", () => cartOverlay.classList.remove("open"));
+
+// Add all buttons with class 'add-to-cart'
+document.querySelectorAll(".add-to-cart").forEach(button => {
+  button.addEventListener("click", () => {
+    const name = button.dataset.name;
+    const price = parseFloat(button.dataset.price);
+
+    const existingItem = cart.find(item => item.name === name);
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      cart.push({ name, price, quantity: 1 });
+    }
+
+    updateCart();
+    cartOverlay.classList.add("open"); // open overlay on add
+  });
+});
+
+function updateCart() {
+  cartItems.innerHTML = "";
+  let total = 0;
+
+  cart.forEach(item => {
+    total += item.price * item.quantity;
+
+    const li = document.createElement("li");
+    li.textContent = `${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`;
+
+    const removeBtn = document.createElement("button");
+    removeBtn.textContent = "❌";
+    removeBtn.style.marginLeft = "0.5rem";
+    removeBtn.addEventListener("click", () => {
+      cart = cart.filter(i => i.name !== item.name);
+      updateCart();
+    });
+
+    li.appendChild(removeBtn);
+    cartItems.appendChild(li);
+  });
+
+  cartTotal.textContent = total.toFixed(2);
+}
+</script>
 
 
 </body>
 </html>
+

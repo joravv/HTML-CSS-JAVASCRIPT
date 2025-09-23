@@ -1,4 +1,3 @@
-/* CSS Reset + Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -458,6 +457,242 @@ body {
   cursor: pointer;
   box-shadow: 0 4px 15px #ff69b4;
   transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+/* ABOUT PAGE */
+.about-page {
+  font-family: 'Poppins', sans-serif;
+  background: #fff0f5; /* soft pink */
+  color: #b03a5b; /* dark pink text */
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+.about-page nav ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.about-page nav a {
+  text-decoration: none;
+  color: #b03a5b;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.about-page nav a:hover {
+  color: #ff69b4;
+}
+
+.about-page h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* About page body */
+.about-page {
+  font-family: 'Poppins', sans-serif;
+  background: #f3e6ff; /* soft purple */
+  color: #f442b0;
+  min-height: 100vh;
+  padding: 0;
+}
+
+/* Navbar (same as home) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(to right, #ef9cc8, #ae2e5d);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #F04D8D;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #d49aff;
+}
+
+.cart-icon {
+  font-size: 1.4rem;
+}
+
+/* About page title */
+.about-hero h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin: 3rem 1rem 2rem 1rem;
+}
+
+/* About page content */
+.about-content {
+  max-width: 900px;
+  margin: 0 auto 5rem auto;
+  padding: 0 1rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+/* Contact Page Styles */
+.contact-page {
+  font-family: 'Poppins', sans-serif;
+  background: #fff7e6; /* cream background */
+  color: #a85c2f;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+/* Back Button */
+.back-button-container {
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+}
+
+.back-button {
+  text-decoration: none;
+  color: #a85c2f;
+  font-weight: 600;
+  background: #ffd699;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(168, 92, 47, 0.3);
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background: #ffcc66;
+}
+
+/* Page Title */
+.contact-page h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #a85c2f;
+  border-radius: 15px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background: linear-gradient(45deg, #ffb347, #ffa500);
+  border: none;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #ffcc66;
+}
+
+
+.language-switcher {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.language-switcher button {
+  background: #b03a5b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.language-switcher button:hover {
+  background: #d45a78;
+}
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -4px 0 15px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+.cart-overlay.open {
+  right: 0;
+}
+
+.cart-content h2 {
+  margin-bottom: 1rem;
+}
+
+.cart-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-content li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.close-cart {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
 
 
