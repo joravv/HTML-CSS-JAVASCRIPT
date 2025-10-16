@@ -26,9 +26,8 @@ sum.onclick=function(){
 sum.onclick=function(){
     if(result>10){
         kushti.innerHTML="numri eshte mei madh sev 10"
-    }else if(result<10)
+    }else if(result<10){
          kushti.innerHTML="numri eshte mei vogel sev 10"
 }else{
-kushti.innerHTML="numri eshte mei barabart sev 10"
-
+kushti.innerHTML="numri eshte mei barabart sev 10"}
 }
