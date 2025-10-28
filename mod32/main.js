@@ -26,7 +26,21 @@ var regex= /[sol]/g;
 document.getElementById('result6').innerHTML=text.match(regex);
 
 
-
 var text= "My school is the top 10";
 var regex= /[0-9]/g;
-document.getElementById('result7').innerHTML=text.match(regex);
+document.getElementById('result7').innerHTML=text.match(regex)
+
+
+var text="My school is the best school";
+var regex=/\s/g;
+document.getElementById("result").innerHTML = text.match(regex);
+
+
+var text="hello helloo hellooo";
+var regex=/o{3}/g;
+document.getElementById("result").innerHTML = text.match(regex);
+
+
+var text="hello helloo hellooo helloooo hellooooo";
+var regex=/o{3,5}/g;
+document.getElementById("result").innerHTML = text.match(regex);
